@@ -1,22 +1,13 @@
 package com.percobaan.restAPI;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.Context;
-
-import java.io.IOException;
-
-import okhttp3.Interceptor;
-import okhttp3.OkHttpClient;
-import okhttp3.Response;
-import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class retroofitInstance {
     private static Retrofit retrofit;
-    private static final String BASE_URL = "http://www-stud.uni-due.de/~sjdiless/api/";
+    //private static final String BASE_URL = "http://192.168.43.249/dienpunya/";
 
+    private static final String BASE_URL = "http://192.168.9.13/dienpunya/";
 
     public static Retrofit getRetrofitInstance() {
        // HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
